@@ -1,8 +1,8 @@
 
 function SetConstsAndListeners(){
 
-  const categoryFilter = document.querySelector(".category-filter");
-  const locationFilter = document.querySelector(".location-filter");
+  const categoryFilter = document.getElementById('category-filter');
+  const locationFilter = document.getElementById('location-filter');
   const result = document.querySelector(".result");
   
   categoryFilter.addEventListener("change", (event) => {
