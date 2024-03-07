@@ -50,6 +50,10 @@ function addPromotion(category, imageSrc, productName, description, price, shopN
     document.querySelector(".promotions ul").appendChild(li);
 }
 
+function removePromotions() {
+document.querySelector(".promotions ul").innerHTML = '';
+}
+
 function addNewPromotion() {
     // Get values from input fields or dropdowns (if any)
     var category = "electronics"; // Example category
