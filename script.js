@@ -5,17 +5,17 @@ const result = null;
 
 function SetConstsAndListeners(){
 
-categoryFilter = document.querySelector(".category-filter");
-locationFilter = document.querySelector(".location-filter");
-result = document.querySelector(".result");
+  categoryFilter = document.querySelector(".category-filter");
+  locationFilter = document.querySelector(".location-filter");
+  result = document.querySelector(".result");
   
-categoryFilter.addEventListener("change", (event) => {
-  result.textContent = `Selected: ${event.target.value}`;
-});
+  categoryFilter.addEventListener("change", (event) => {
+    result.textContent = `Selected: ${event.target.value}`;
+  });
 
-locationFilter.addEventListener("change", (event) => {
-  result.textContent = `Selected: ${event.target.value}`;
-});
+  locationFilter.addEventListener("change", (event) => {
+    result.textContent = `Selected: ${event.target.value}`;
+  });
   
 }
 
