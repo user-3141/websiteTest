@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.filters {
+    margin: 20px;
+}
+
+.filters label,
+.filters select {
+    margin-right: 10px;
+}
+
+.promotions {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto; /* Enable vertical scrollbar if needed */
+}
+
+.promotions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.promotions li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.promotions li:last-child {
+    border-bottom: none;
+}
+
+/* Example of different promotion categories */
+.promotions .electronics {
+    background-color: #e0f7fa;
+}
+
+.promotions .clothing {
+    background-color: #f3e5f5;
+}
+
+.promotions .food {
+    background-color: #ffe0b2;
+}
+
+.promotions .promotion-item {
+    display: flex;
+    align-items: center;
+}
+
+.promotions .product-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Spacing between image and details */
+}
+
+.promotions .promotion-details {
+    flex-grow: 1; /* Allow the details to expand to fill remaining space */
+}
+
+.promotions .promotion-details h3 {
+    margin-top: 0;
+}
+
+.promotions .promotion-details .price {
+    font-weight: bold;
+}
+
+.promotions .promotion-details .shop {
+    color: #666;
+}
