@@ -1,3 +1,21 @@
+const categoryFilter = document.querySelector(".category-filter");
+const locationFilter = document.querySelector(".location-filter");
+const result = document.querySelector(".result");
+
+categoryFilter.addEventListener("change", (event) => {
+  result.textContent = `Selected: ${event.target.value}`;
+});
+
+locationFilter.addEventListener("change", (event) => {
+  result.textContent = `Selected: ${event.target.value}`;
+});
+
+
+
+
+
+
+
 function addPromotion(category, imageSrc, productName, description, price, shopName) {
     // Create list item
     var li = document.createElement("li");
