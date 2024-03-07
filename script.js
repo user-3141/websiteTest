@@ -1,7 +1,14 @@
-const categoryFilter = document.querySelector(".category-filter");
-const locationFilter = document.querySelector(".location-filter");
-const result = document.querySelector(".result");
+const categoryFilter;
+const locationFilter;
+const result;
 
+
+function SetConstsAndListeners(){
+
+categoryFilter = document.querySelector(".category-filter");
+locationFilter = document.querySelector(".location-filter");
+result = document.querySelector(".result");
+  
 categoryFilter.addEventListener("change", (event) => {
   result.textContent = `Selected: ${event.target.value}`;
 });
@@ -9,8 +16,8 @@ categoryFilter.addEventListener("change", (event) => {
 locationFilter.addEventListener("change", (event) => {
   result.textContent = `Selected: ${event.target.value}`;
 });
-
-
+  
+}
 
 
 
