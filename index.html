@@ -19,10 +19,9 @@
               })
               .then((data) => {
                     console.log(data);
-                    console.log(data[1]);
-                    console.log(data.users);
                     console.log(data.users[0]);
-                    console.log(data.users[1]);
+                    console.log(data.users[0].user);
+                    console.log(data.users[0].site);
                     document.getElementById("demo").innerHTML = JSON.stringify(data);
               })
               .catch((error) => 
