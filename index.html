@@ -1,31 +1,103 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-    
-  <p id="demo"></p>
-  <script>
-      function fetchJSONData() {
-          fetch("./sample.json")
-              .then((res) => {
-                  if (!res.ok) {
-                      throw new Error
-                          (`HTTP error! Status: ${res.status}`);
-                  }
-                  return res.json();
-              })
-              .then((data) => {
-                    console.log(data);
-  
-                    document.getElementById("demo").innerHTML = JSON.stringify(data.oferty);
-              })
-              .catch((error) => 
-                     console.error("Unable to fetch data:", error));
-      }
-      fetchJSONData();
-  </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="filters">
+        <label for="category-filter">Category:</label>
+        <select id="category-filter">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="food">Food</option>
+        </select>
+
+        <label for="location-filter">Location:</label>
+        <select id="location-filter">
+            <option value="all">All</option>
+            <option value="local">Local</option>
+            <option value="national">National</option>
+        </select>
+    </div>
+
+    <div class="promotions">
+        <ul>
+	<li class="electronics">
+            <div class="promotion-item">
+                <img src="smrt-tv.jpg" alt="Smart TV" class="product-image">
+                <div class="promotion-details">
+                    <h3>Smart TV</h3>
+                    <p>Enjoy 50% off on our latest Smart TVs. Experience stunning visuals and immersive entertainment.</p>
+                    <p class="price">$799</p>
+                    <p class="shop">ElectroMart</p>
+                </div>
+            </div>
+        </li>
+	<li class="electronics">
+            <div class="promotion-item">
+                <img src="smrt-tv.jpg" alt="Smart TV" class="product-image">
+                <div class="promotion-details">
+                    <h3>Smart TV</h3>
+                    <p>Enjoy 50% off on our latest Smart TVs. Experience stunning visuals and immersive entertainment.</p>
+                    <p class="price">$799</p>
+                    <p class="shop">ElectroMart</p>
+                </div>
+            </div>
+        </li>
+	<li class="electronics">
+            <div class="promotion-item">
+                <img src="smrt-tv.jpg" alt="Smart TV" class="product-image">
+                <div class="promotion-details">
+                    <h3>Smart TV</h3>
+                    <p>Enjoy 50% off on our latest Smart TVs. Experience stunning visuals and immersive entertainment.</p>
+                    <p class="price">$799</p>
+                    <p class="shop">ElectroMart</p>
+                </div>
+            </div>
+        </li>
+	<li class="electronics">
+            <div class="promotion-item">
+                <img src="smrt-tv.jpg" alt="Smart TV" class="product-image">
+                <div class="promotion-details">
+                    <h3>Smart TV</h3>
+                    <p>Enjoy 50% off on our latest Smart TVs. Experience stunning visuals and immersive entertainment.</p>
+                    <p class="price">$799</p>
+                    <p class="shop">ElectroMart</p>
+                </div>
+            </div>
+        </li>
+	<li class="food">
+            <div class="promotion-item">
+                <img src="smrt-tv.jpg" alt="Smart TV" class="product-image">
+                <div class="promotion-details">
+                    <h3>Smart TV food</h3>
+                    <p>Enjoy 50% off on our latest Smart TVs. Experience stunning visuals and immersive entertainment.</p>
+                    <p class="price">$799</p>
+                    <p class="shop">ElectroMart</p>
+                </div>
+            </div>
+        </li>
+	<li class="electronics">
+            <div class="promotion-item">
+                <img src="smrt-tv.jpg" alt="Smart TV" class="product-image">
+                <div class="promotion-details">
+                    <h3>Smart TV</h3>
+                    <p>Enjoy 50% off on our latest Smart TVs. Experience stunning visuals and immersive entertainment.</p>
+                    <p class="price">$799</p>
+                    <p class="shop">ElectroMart</p>
+                </div>
+            </div>
+        </li>
+        </ul>
+    </div>
+
+	<!-- Button to add a new promotion -->
+    <button onclick="addNewPromotion()">Add Promotion</button>
+
+    <script src="script.js"></script>
+</body>
 </html>
