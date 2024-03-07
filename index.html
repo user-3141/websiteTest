@@ -18,8 +18,8 @@
                   return res.json();
               })
               .then((data) => {
-                    console.log(data);
-                    document.getElementById("demo").innerHTML = data;
+                    console.log(JSON.stringify(data));
+                    document.getElementById("demo").innerHTML = JSON.stringify(data);
               })
               .catch((error) => 
                      console.error("Unable to fetch data:", error));
