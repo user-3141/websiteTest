@@ -1,8 +1,20 @@
 {
-  "users":[
+  "oferty":[
     {
-        "site":"GeeksforGeeks",
-        "user": "Shobhit"
+        "sklep":"Biedronka",
+        "dataRoz":"2024-03-07",
+        "dataZak":"2024-03-11",
+        "kategoria":"nabiał",
+        "produkt":"Ser Gouda 150g Mlekowita",
+        "cena":1,99
+    },
+    {
+        "sklep":"Biedronka",
+        "dataRoz":"2024-03-07",
+        "dataZak":"2024-03-11",
+        "kategoria":"mięsne",
+        "produkt":"Mięso mielone wieprzowe 400g Mięsoroby",
+        "cena":5,99
     }
   ]
 }
