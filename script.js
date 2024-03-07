@@ -12,7 +12,7 @@ function SetConstsAndListeners(){
   locationFilter.addEventListener("change", (event) => {
     result.textContent = `Selected: ${event.target.value}`;
   });
-  
+  console.log("SetRun");
 }
 
 
