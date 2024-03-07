@@ -1,6 +1,6 @@
-const categoryFilter = null;
-const locationFilter = null;
-const result = null;
+var categoryFilter = null;
+var locationFilter = null;
+var result = null;
 
 
 function SetConstsAndListeners(){
