@@ -6,12 +6,12 @@ function SetConstsAndListeners(){
 
   document.getElementById('category-filter').addEventListener("change", (event) => {
     categoryFilter = event.target.value;
-    UpdatePromoElements()
+    UpdatePromoElements();
   });
 
   document.getElementById('location-filter').addEventListener("change", (event) => {
     locationFilter = event.target.value;
-    UpdatePromoElements()
+    UpdatePromoElements();
   });
 
   fetch("./sample.json")
@@ -46,7 +46,7 @@ function UpdatePromoElements(){
 
   filteredPromoArray.forEach((item) => {
     addPromotion(item.kategoria,"smrt-tv.jpg",item.produkt,"opis produktu",item.cena,item.sklep);
-  })
+  });
   
 }
 
