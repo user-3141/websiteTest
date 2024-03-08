@@ -21,10 +21,11 @@ function SetConstsAndListeners(){
               .then((data) => {
                     console.log(data);
                     promoArray = data.oferty;
+                    UpdatePromoElements();
               })
               .catch((error) => 
                      console.error("Unable to fetch data:", error));
-  UpdatePromoElements()
+  
   console.log("SetCalled");
 }
 
