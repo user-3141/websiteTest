@@ -113,7 +113,7 @@ function addNewPromotion() {
     var productName = "New Product"; // Example product name
     var description = "Description of the new product"; // Example description
     var price = "$99.99"; // Example price
-    var shopName = "lidl"; // Example shop name
+    var shopName = "Lidl"; // Example shop name
 
     // Call addPromotion function with provided details
     addPromotion(category, imageSrc, productName, description, price, shopName);
