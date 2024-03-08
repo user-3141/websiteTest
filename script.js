@@ -24,7 +24,7 @@ function SetConstsAndListeners(){
               })
               .catch((error) => 
                      console.error("Unable to fetch data:", error));
-  
+  UpdatePromoElements()
   console.log("SetCalled");
 }
 
