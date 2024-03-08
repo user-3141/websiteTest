@@ -37,15 +37,16 @@ function UpdatePromoElements(){
   
   removePromotions();
   var filteredPromoArray = promoArray;
+  console.log("length " + filteredPromoArray.Length());
   if(categoryFilter != 'all'){
     filteredPromoArray = filteredPromoArray.filter(item => (item.kategoria == categoryFilter));
   }
   if(locationFilter != 'all'){
     filteredPromoArray = filteredPromoArray.filter(item => (item.sklep == locationFilter));
   }
-
+  console.log("length " + filteredPromoArray.Length());
   filteredPromoArray.forEach((item) => {
-    addPromotion(item.kategoria,"smrt-tv.jpg",item.produkt,"opis produktu",item.cena,item.sklep);
+    addPromotion("electronics","smrt-tv.jpg",item.produkt,"opis produktu",item.cena,item.sklep);
   });
   
 }
