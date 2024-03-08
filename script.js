@@ -1,16 +1,12 @@
 var promoArray = null;
-var categoryFilter = null;
-var locationFilter = null;
 
 function SetConstsAndListeners(){
 
   document.getElementById('category-filter').addEventListener("change", (event) => {
-    categoryFilter = event.target.value;
     UpdatePromoElements();
   });
 
   document.getElementById('location-filter').addEventListener("change", (event) => {
-    locationFilter = event.target.value;
     UpdatePromoElements();
   });
 
@@ -37,16 +33,18 @@ function UpdatePromoElements(){
   
   removePromotions();
   var filteredPromoArray = promoArray;
-  console.log(categoryFilter+" length " + filteredPromoArray.length);
+  var categoryFilter = document.getElementById('category-filter').value;
+  var locationFilter = document.getElementById('location-filter').value;
+  
   if(categoryFilter != "all"){
     filteredPromoArray = filteredPromoArray.filter(item => (item.kategoria == categoryFilter));
   }
   if(locationFilter != "all"){
     filteredPromoArray = filteredPromoArray.filter(item => (item.sklep == locationFilter));
   }
-  console.log(locationFilter+" length " + filteredPromoArray.length);
+  
   filteredPromoArray.forEach((item) => {
-    addPromotion("electronics","smrt-tv.jpg",item.produkt,"opis produktu",item.cena,item.sklep);
+    addPromotion(item.kategoria,"smrt-tv.jpg",item.produkt,"opis produktu",item.cena,item.sklep);
   });
   
 }
@@ -110,12 +108,12 @@ document.querySelector(".promotions ul").innerHTML = '';
 
 function addNewPromotion() {
     // Get values from input fields or dropdowns (if any)
-    var category = "electronics"; // Example category
+    var category = "inne"; // Example category
     var imageSrc = "smrt-tv.jpg"; // Example image source
     var productName = "New Product"; // Example product name
     var description = "Description of the new product"; // Example description
     var price = "$99.99"; // Example price
-    var shopName = "New Shop"; // Example shop name
+    var shopName = "lidl"; // Example shop name
 
     // Call addPromotion function with provided details
     addPromotion(category, imageSrc, productName, description, price, shopName);
