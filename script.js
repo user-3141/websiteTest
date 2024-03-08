@@ -37,10 +37,10 @@ function UpdatePromoElements(){
   
   removePromotions();
   var filteredPromoArray = promoArray;
-  if(categoryFilter != ''){
+  if(categoryFilter != 'all'){
     filteredPromoArray = filteredPromoArray.filter(item => (item.kategoria == categoryFilter));
   }
-  if(locationFilter != ''){
+  if(locationFilter != 'all'){
     filteredPromoArray = filteredPromoArray.filter(item => (item.sklep == locationFilter));
   }
 
