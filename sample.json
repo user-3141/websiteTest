@@ -1,6 +1,14 @@
 {
   "oferty":[
     {
+        "sklep":"Lidl",
+        "dataRoz":"2024-03-09",
+        "dataZak":"2024-03-13",
+        "kategoria":"inne",
+        "produkt":"Jakie coś",
+        "cena":11.11
+    },
+    {
         "sklep":"Biedronka",
         "dataRoz":"2024-03-07",
         "dataZak":"2024-03-11",
